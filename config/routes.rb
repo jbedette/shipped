@@ -1,5 +1,27 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root 'home#index'
 end
+=======
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+# Ship routes
+
+  get     "/ships"            	  =>     "ships#index", as: "ships"
+  get     "/ships/new"        	  =>     "ships#new", as: "new_ship"
+  post    "/ships"         	      =>     "ships#create"
+  get     "/ships/:id"            =>     "ships#show", as: "ship"
+  get     "/ships/:id/edit"       =>     "ships#edit", as: "edit_ship"
+  put     "/ships/:id"            =>     "ships#update"
+  patch   "/ships/:id"            =>     "ships#update"
+  delete  "/ships/:id"            =>     "ships#destroy"
+
+
+end
+
+
+
+
+>>>>>>> george

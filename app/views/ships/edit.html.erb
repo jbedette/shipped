@@ -1,0 +1,11 @@
+<h1><%= @message %></h1>
+<hr />
+<%= form_for @ship do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %> <br>
+  <%= f.label :containers %>
+  <%= f.text_field :containers %> <br>
+  <%= f.label :location %>
+  <%= f.text_field :location %><br><br>
+  <%= f.submit %>
+<% end %>

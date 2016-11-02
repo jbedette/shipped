@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+<<<<<<< HEAD
+=======
+ships = Ship.create(
+	[{name: "Enterprise", containers: 25, location: "Earth"}])
+>>>>>>> george
